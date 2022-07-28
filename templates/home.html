@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Pick Your Story {% endblock %}
+
+{% block content %}
+
+<form action="questions">
+  <label for="story">pick your story</label>
+  <select name="story">
+    <option value="silly">
+      silly story
+    </option>
+    <option value="excited">
+      excited story
+    </option>
+  </select>
+
+  <input type="submit" value="start writing your story">
+</form>
+
+{% endblock %}
